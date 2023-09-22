@@ -1,0 +1,28 @@
+nums = [2,7,11,15]
+print("vector:", nums)
+
+target = 42
+
+l_num = len(nums) #vector length
+in_fi = 0 #index of first elem
+in_la = l_num #index of last elem
+
+hasht = []
+hasht.insert(0, target-nums[0]) #fill initial element of hash table
+
+i=1 
+count = True
+while count and i<=in_la-1:
+    for j in range (in_fi, i):
+        print(i,j)
+        if nums[i]==hasht[j]:
+            print("indices: ",j,i)
+            count = False
+        else:
+            diff = target-nums[i]
+            hasht.insert(i, diff)
+    i+=1
+    
+            
+
+
