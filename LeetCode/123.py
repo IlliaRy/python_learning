@@ -7,8 +7,6 @@ j=0
 
 
 
-
-
 while len(l1)<len(l2):
     l1.insert(0,0)
 while len(l2)<len(l1):
